@@ -24,7 +24,7 @@ class JeuDeCartesApplicationTests {
 	}
 	
 	@Test
-	void elementExistOnceCartesList() {
+	void elementNonDoubleCartesList() {
 		ArrayList<Carte> carteListResult = new ArrayList<Carte>();
 		carteListResult = jeuDeCartesController.getCartes();
 		for (int i = 0; i < carteListResult.size(); i++) {
